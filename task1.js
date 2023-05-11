@@ -10,6 +10,12 @@ function largest() {
     let b=Number(input_b.value);  //parseFloat
     let result=1;
 
+    if (isNaN(a) || isNaN(b)){
+        result = "Please enter a number"
+    }
+
+    
+
     for (let i=1; i <= Math.min(a, b); i++)
     {
         if (a%i==0 && b%i==0)
